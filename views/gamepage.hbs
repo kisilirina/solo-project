@@ -1,0 +1,17 @@
+<div class="flexColumn margin10">
+  <h2 class="titlegame descriptionone">{{game.name}}</h2>
+  <img class="margin10" src="{{game.images.medium}}">
+  {{#if game.rules_url}}
+  <a href="{{game.official_url}}">Оффициальный сайт</a>
+  <a href="{{game.rules_url}}">Правила игры</a>
+  {{/if}}
+  <p>Цена: {{game.price_text}}</p>
+  <p class="descriptionone">{{discriptionRussian}}</p>
+
+  {{#if video.length}}
+  <video controls poster="{{video.image_url}}">
+    <source src="{{video.url}}">
+  </video>
+  {{/if}}
+
+</div>

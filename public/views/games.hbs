@@ -1,0 +1,11 @@
+
+{{#each gamesList}}
+<div class="divGame">
+  <div class="gameImage"><img data-id="{{this.id}}" src="{{this.image_url}}"></div>
+  <div class="description">
+    <h3><a href="/{{this.id}}">{{this.name}}</a></h3>
+    <p>{{this.description_preview}}</p>
+    <p>{{this.price_text}}</p>
+  </div>
+</div>
+  {{/each}}
